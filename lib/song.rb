@@ -17,11 +17,11 @@ class Song
     end
 
     def self.genre_count
-        @@genres.each_with_object({}) {|k, hash|  hash[k] = @@genres.count(k)}
+        @@genres.each_with_object({}) {|key, hash|  hash[key] = @@genres.count(key)}
     end
 
     def self.artist_count
-        @@artists.each_with_object({}) {|k, hash|  hash[k] = @@artists.count(k)}
+        @@artists.each_with_object({}) {|key, hash|  hash[key] = @@artists.count(key)}
     end
 
     def initialize(name, artist, genre)
